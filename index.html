@@ -8,20 +8,35 @@
     <title>NICAR 2022 Intro to Web Dev</title>
     <!-- You can style the contents of your page by putting CSS in the <style> tag below: -->
     <style>
+      h1 {
+        max-width: 790px;
+        margin: 20px auto;
+        color:rgba(256, 25, 155, 0.9)
+      }
+      h2 {
+        max-width: 790px;
+        margin: 20px auto;
+        color:rgba(256, 25, 155, 0.9)
+      }
       body {
         max-width: 790px;
         margin: 20px auto;
+        color:blueviolet;
+        background-image:linear-gradient(red, yellow,hotpink);
       }
 
       figure {
-        margin: 0;
+        margin: 20;
       }
+
+      
 
       /* We'll use these later! */
       .content {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: linear-gradient(90deg, rgba(255,0,0,1));
         padding: 20px;
       }
+
 
       .make_it_cheese {
         background-image: url("media/cheese_background.png");
@@ -36,28 +51,44 @@
       <!-- You can add HTML elements to your page here -->
 
       <!-- Step 1: Make a headline for the page -->
-
+     <h1> 123 </h1> 
       <!--
         Step 2: Edit the image caption
         We grabbed the image from: https://commons.wikimedia.org/wiki/File:Picada_cordobesa.jpg
       -->
+      <p><i> A PICTURE </i> </p>
+  
       <figure>
         <img width="750" src="media/cheese.jpeg" alt="Delicious cheese" />
         <figcaption>A delicious cheese plate.</figcaption>
       </figure>
 
       <!-- Step 3: Add a byline, and make it bold -->
-
+      <h2>someone </h2>
       <!--
         Step 4: Add some paragraphs.
         You can grab placeholder text here: http://www.cheeseipsum.co.uk/
       -->
+     <p>Pepper jack lancashire cottage cheese. Feta camembert de normandie cheese triangles stilton mascarpone croque monsieur squirty cheese parmesan. Cauliflower cheese port-salut fondue who moved my cheese mascarpone fromage frais cheesecake gouda. Airedale chalk and cheese queso croque monsieur rubber cheese lancashire cheese triangles paneer. Cheesy feet edam cheese on toast.
 
+      Roquefort bavarian bergkase cut the cheese. Halloumi melted cheese edam red leicester cauliflower cheese cheeseburger cut the cheese dolcelatte. Cheeseburger fondue port-salut who moved my cheese feta paneer cheddar cottage cheese. Cream cheese cheesy grin cheese on toast fondue cream cheese.
+      
+      Say cheese chalk and cheese rubber cheese. Monterey jack brie squirty cheese pecorino cheese and wine everyone loves pepper jack caerphilly. Manchego cheese triangles cow when the cheese comes out everybody's happy stinking bishop ricotta cow cut the cheese. Rubber cheese.
+      
+      Say cheese everyone loves emmental. Queso feta brie croque monsieur fondue edam cheeseburger feta. Bavarian bergkase fromage frais cow melted cheese monterey jack swiss taleggio queso. When the cheese comes out everybody's happy smelly cheese the big cheese when the cheese comes out everybody's happy boursin chalk and cheese feta cheese and biscuits. Halloumi goat.
+      
+      Bavarian bergkase fondue cheese on toast. Airedale pepper jack croque monsieur blue castello swiss paneer paneer stinking bishop. Cut the cheese smelly cheese cheese slices roquefort bavarian bergkase blue castello st. agur blue cheese cheese on toast. Cheese triangles bocconcini cauliflower cheese cheese strings cream cheese fondue taleggio manchego. Cauliflower cheese babybel cheddar.
+      </p> 
       <!-- Step 5: Add a button with an onclick event -->
+      <button onclick="magic()"> click here</button> 
     </section>
-
     <script>
       // Step 6: Add some JavaScript to your page here
+      function magic() {
+        document.getElementById("the_cheese").classList.add("make_it_cheese");
+        // the_cheese.style.color = 'black'
+      }
+      
     </script>
   </body>
 </html>
